@@ -1,0 +1,14 @@
+<h1>Editing user</h1>
+
+<% if @current_user.name == @user.name %>
+  <%= render "form", user: @user %>
+<% else %>
+  <div class="alert alert-danger" style="width: fit-content">You don't have permission to edit this user</div>
+<% end %>
+
+<br>
+
+<div>
+  <%= link_to "Show this user", @user %> |
+  <%= link_to "Back to users", users_path %>
+</div>

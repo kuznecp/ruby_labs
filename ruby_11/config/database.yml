@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  user: ilyatop
+  host: localhost
+  password: 1234
+  port: 5432
+
+development:
+  <<: *default
+  database: ruby_11_development
+
+test:
+  <<: *default
+  database: ruby_11_test
+
+production:
+  <<: *default
+  database: ruby_11_production
+  username: ruby_11
+  password: <%= ENV['RUBY_11_DATABASE_PASSWORD'] %>

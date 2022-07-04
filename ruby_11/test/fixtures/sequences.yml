@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  'n': 1
+  begseq: MyString
+  allseq: MyString
+  longseq: MyString
+  countseq: 1
+
+two:
+  'n': 1
+  begseq: MyString
+  allseq: MyString
+  longseq: MyString
+  countseq: 1

@@ -1,0 +1,23 @@
+@import "bootstrap";
+input, label{
+  margin: 0.5em;
+}
+td, th{
+  word-break: break-all;
+}
+nav, .container{
+  background: white;
+}
+.btn{
+  background-color: red;
+}
+body {
+  background-color: grey;
+  margin: 0;
+  font-family: Arial;
+}
+.container{
+  padding: 1em;
+  margin-top:3em;
+  text-align: center;
+}

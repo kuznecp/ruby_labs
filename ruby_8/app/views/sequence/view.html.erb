@@ -1,0 +1,41 @@
+<style>
+  div.full_table table, div.full_table th, div.full_table td, div.full_table tr{
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    background-color: black;
+  }
+  div.full_table th{
+    width: 10%;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+  }
+</style>
+<h1>Sequence#view</h1>
+<% if @result == -1 %>
+  <%= 'Числа введены неверно, попробуйте ещё раз!' %>
+<% else %>
+  <p>Solve</p>
+  <p id="solve"></p>
+  <div class="full_table">
+    <table>
+      <tr>
+        <th>N</th>
+        <th>Исходная последовательность</th>
+        <th>Все отрезки</th>
+        <th>Самый длинный отрезок</th>
+        <th>Кол-во отрезков</th>
+      </tr>
+      <tr>
+        <td><%= @td1 %></td>
+        <td><%= @td2 %></td>
+        <td><%= @td3 %></td>
+        <td><%= @td4 %></td>
+        <td><%= @td5 %></td>
+      </tr>
+    </table>
+  </div>
+  <br/>
+<% end %>
+<%= link_to "Add other sequence", :sequence_input %>

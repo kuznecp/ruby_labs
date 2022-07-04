@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  user: bd_user
+  password: 1234
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: laba10_test_development
+
+test:
+  <<: *default
+  database: laba10_test_test

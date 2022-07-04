@@ -1,0 +1,19 @@
+<h1> Список телевизоров и их характеристики с сайта e-catalog </h1>
+
+<table class="table table-bordered">
+  <tr>
+    <th> <br> Название </th>
+    <th> <br> Диагональ </th>
+    <th> <br> Мультимедиа </th>
+    <th> <br> Цена </th>
+  </tr>
+  <% TvSet.all.each do |tv| %>
+    <tr>
+      <td> <%= tv.name %> </td>
+      <td> <%= tv.size %> </td>
+      <td> <%= tv.multimedia %> </td>
+      <td> <%= tv.price %> </td>
+    </tr>
+  <% end %>
+
+</table>

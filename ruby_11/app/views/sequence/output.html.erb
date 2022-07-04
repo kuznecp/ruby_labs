@@ -1,0 +1,27 @@
+<h1> Output </h1>
+<% if @result == 0 %>
+  <h2>Введите корректные числа</h2>
+<% else %>
+  <table class="table table-bordered w-auto'">
+    <tr>
+      <th>N</th>
+      <th>Исходная последовательность</th>
+      <th>Все отрезки</th>
+      <th>Самый длинный отрезок</th>
+      <th>Кол-во отрезков</th>
+    </tr>
+    <tr>
+      <td><%= @ready_numbers[0] %></td>
+      <td><%= @ready_numbers[1] %></td>
+      <td><%= @ready_numbers[2] %></td>
+      <td><%= @ready_numbers[3] %></td>
+      <td><%= @ready_numbers[4] %></td>
+    </tr>
+  </table>
+  <i>XML of DB, all</i>: <br>
+
+  <%= @xml %> <br>
+<% end %>
+
+
+<%= link_to 'Return to input page', sequence_input_path %>

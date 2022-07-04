@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Users</h1>
+
+<div id="users">
+  <% User.find_each do |user| %>
+    <strong>Name</strong>: <%= user.name %> <br>
+    <strong>Last login</strong>: <%= user.last_login %> <br>
+    <%= link_to 'Show this user', user %> <br> <br>
+  <% end %>
+</div>
+
+<br>
+
+<h5><%= link_to "Back to login page", session_login_path %></h5>

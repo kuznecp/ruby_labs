@@ -1,0 +1,9 @@
+<h1>Sequence#input</h1>
+<p>Введите кол-во чисел и сами числа через пробел</p>
+<%= form_tag("/sequence/view", :method => "get") do %>
+  <%= label_tag("Number N: ") %>
+  <%= text_field_tag(:v1) %>  <br/> <br/>
+  <%= label_tag("Sequence of N numbers: ") %>
+  <%= text_field_tag(:v2) %>  <br/> <br/>
+  <%= submit_tag("Sequence result") %>
+<% end %>

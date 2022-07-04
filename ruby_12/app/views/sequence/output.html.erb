@@ -1,0 +1,23 @@
+<h1> Output </h1>
+<% if @result == 0 %>
+  <h2>Введите корректные числа</h2>
+<% else %>
+  <table class="table table-bordered w-auto'">
+    <tr>
+      <th>N</th>
+      <th>Исходная последовательность</th>
+      <th>Все отрезки</th>
+      <th>Самый длинный отрезок</th>
+      <th>Кол-во отрезков</th>
+    </tr>
+    <tr>
+      <td><%= @var_n %></td>
+      <td><%= @begseq %></td>
+      <td><%= @allseq %></td>
+      <td><%= @longseq %></td>
+      <td><%= @countseq %></td>
+    </tr>
+  </table>
+<% end %>
+
+<%= link_to 'Return to input page', sequence_input_path %>

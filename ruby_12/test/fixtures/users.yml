@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: first
+  password_digest: 1234
+  last_login: 2021-12-11 23:56:36
+
+two:
+  name: second
+  password_digest: 2345
+  last_login: 2021-12-11 23:56:36

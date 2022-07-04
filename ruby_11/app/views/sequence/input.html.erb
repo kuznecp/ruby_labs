@@ -1,0 +1,9 @@
+<h1> Input </h1>
+
+<%= form_with url: sequence_output_path, method: :get do |form| %>
+  <%= form.label 'Enter n value:' %> <br>
+  <%= form.text_field :n, step: 1, required: true, class: "in-form" %> <br><br>
+  <%= form.label 'Enter sequence:' %> <br>
+  <%= form.text_field :begseq, required: true, class: "in-form" %> <br><br>
+  <%= form.submit 'Calculate', class: 'btn btn-primary' %>
+<% end %>

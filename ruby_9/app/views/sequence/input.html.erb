@@ -1,0 +1,21 @@
+<!-- app/views/sequence/input.html.erb -->
+<form id="form" action="javascript:">
+<h1>Последовательность</h1>
+  <label>Введите натуральное число:</label>
+  <input type="number" pattern="^[\d]+$" name="value" /> <br> <br>
+  <label>Введите числа через пробел:</label>
+  <input type="text" name="numbers"/> <br> <br>
+  <input type="submit" class = "btn btn-primary" value="Найти последовательность"/>
+</form>
+<table id="table" style="display:none" class="table table-hover">
+  <tr>
+    <th>Н</th>
+    <th>Исходная посл-ть</th>
+    <th>Подходящие посл-ти</th>
+    <th>Длиннейшая посл-ть</th>
+    <th>Кол-во посл-тей</th>
+  </tr>
+</table>
+<div id="error" style="display:none" class = "alert alert-danger">
+  <strong>Ошибка!</strong> Введите числа правильно!
+</div>
